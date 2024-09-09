@@ -47,6 +47,7 @@ jobs:
 
     - name: Upgrade Dart and Flutter Packages
       run: |
+        cd Unit_Converter_App
         flutter pub upgrade --major-versions
 
     - name: Patch for linux build
@@ -93,6 +94,7 @@ jobs:
 
     - name: Upgrade Dart and Flutter Packages
       run: |
+        cd Unit_Converter_App/
         flutter pub upgrade --major-versions
 
     - name: Flet Build macOS
@@ -132,6 +134,7 @@ jobs:
 
     - name: Upgrade Dart and Flutter Packages
       run: |
+        cd Unit_Converter_App/
         flutter pub upgrade --major-versions
 
     - name: Flet Build Windows
@@ -171,6 +174,7 @@ jobs:
 
     - name: Upgrade Dart and Flutter Packages
       run: |
+        cd Unit_Converter_App/
         flutter pub upgrade --major-versions
 
     - name: Flet Build AAB
@@ -216,6 +220,7 @@ jobs:
 
     - name: Upgrade Dart and Flutter Packages
       run: |
+        cd Unit_Converter_App/
         flutter pub upgrade --major-versions
 
     - name: Flet Build APK
@@ -255,6 +260,7 @@ jobs:
 
     - name: Upgrade Dart and Flutter Packages
       run: |
+        cd Unit_Converter_App/
         flutter pub upgrade --major-versions
 
     - name: Flet Build IPA
