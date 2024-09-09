@@ -45,6 +45,10 @@ jobs:
       with:
         flutter-version: ${{ env.FLUTTER_VERSION }}
 
+    - name: Upgrade Dart and Flutter Packages
+      run: |
+        flutter pub upgrade --major-versions
+
     - name: Patch for linux build
       run: |
         flutter doctor
@@ -87,6 +91,10 @@ jobs:
       with:
         flutter-version: ${{ env.FLUTTER_VERSION }}
 
+    - name: Upgrade Dart and Flutter Packages
+      run: |
+        flutter pub upgrade --major-versions
+
     - name: Flet Build macOS
       run: |
         flutter config --no-analytics
@@ -122,6 +130,10 @@ jobs:
       with:
         flutter-version: ${{ env.FLUTTER_VERSION }}
 
+    - name: Upgrade Dart and Flutter Packages
+      run: |
+        flutter pub upgrade --major-versions
+
     - name: Flet Build Windows
       run: |
         flutter config --no-analytics
@@ -156,6 +168,10 @@ jobs:
       uses: subosito/flutter-action@v2
       with:
         flutter-version: ${{ env.FLUTTER_VERSION }}
+
+    - name: Upgrade Dart and Flutter Packages
+      run: |
+        flutter pub upgrade --major-versions
 
     - name: Flet Build AAB
       run: |
@@ -198,6 +214,10 @@ jobs:
         distribution: 'temurin'
         java-version: '21'
 
+    - name: Upgrade Dart and Flutter Packages
+      run: |
+        flutter pub upgrade --major-versions
+
     - name: Flet Build APK
       run: |
         flutter config --no-analytics
@@ -232,6 +252,10 @@ jobs:
       uses: subosito/flutter-action@v2
       with:
         flutter-version: ${{ env.FLUTTER_VERSION }}
+
+    - name: Upgrade Dart and Flutter Packages
+      run: |
+        flutter pub upgrade --major-versions
 
     - name: Flet Build IPA
       run: |
